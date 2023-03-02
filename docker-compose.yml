@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  nginx:
+    build: ./src
+    restart: unless-stopped
+    ports:
+     - 80:80
+    stdin_open: true
+    tty: true
