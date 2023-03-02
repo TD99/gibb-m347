@@ -1,9 +1,8 @@
 version: "3.9"
 services:
-  nginx:
-    build: ./src
+  ariweb:
+    image: tdu135585/ariwebsite:v1
     restart: unless-stopped
     ports:
      - 80:80
-    stdin_open: true
-    tty: true
+    tty: true # enable to get the output from nginx / disable to keep the log clean
